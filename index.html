@@ -1,1 +1,73 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Petrona:ital,wght@0,100;0,500;1,300;1,400&family=Rubik+Bubbles&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="fevicon.png">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav">
+        <a href="#" class="flex">
+          <img src="icon.png" alt="logo" class="logo" />
+          <h1 class="header">Meal Planner</h1>
+        </a>
+      </div>
+    </nav>
+    <section class="form flex" id="user-form">
+      <div class="form flex">
+        <div class="flex userinput">
+          <input type="number" placeholder="Enter Weight" id="weight" />
+          <input type="number" placeholder="Enter Height" id="height" />
+          <input type="number" placeholder="Enter Age" id="age" />
+        </div>
+        <div class="inputfield">
+          <div class="box">
+             <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="box">
+            <label for="activity">Activity Level :</label>
+            <select id="activity" name="activity">
+              <option value="light">Light</option>
+              <option value="moderate">Moderate</option>
+              <option value="active">Active</option>
+            </select>
+          </div>
+        </div>
+        <div class="button1 form-btn flex">
+          <button class="button btn form-btn" type="submit">
+            Generte Meals
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="card" id="mealplan">
+      <div id="loader" style="display: none"></div>
+      <div class="text-center" id="details"></div>
+      <div class="row1"></div>
+    </div>
+    <div class="recipe1">
+      <h1 id="recipe-s" class="text-center"></h1>
+      <div class="row2" id="meal-plan">
+        <div class="recipes" id="ingredients"></div>
+        <div class="recipes" id="steps"></div>
+        <div class="recipes" id="equipment"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
