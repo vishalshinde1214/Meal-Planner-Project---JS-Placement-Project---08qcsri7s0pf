@@ -48,7 +48,6 @@ formBtn.addEventListener("click", (event) => {
 });
 
 const generatemeal = async (bmr) => {
-  document.getElementById("loader").style.display = "block";
   const url = `https://api.spoonacular.com//mealplanner/generate?timeFrame=day&targetCalories=${dailyCalories}&apiKey=${APIkey}&includeNutrition=true`;
   let datas;
   await fetch(url)
